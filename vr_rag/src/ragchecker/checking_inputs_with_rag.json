@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "query_id": "000",
+      "query": "what is isbar",
+      "gt_answer": "it stands for introduction,situation ,background ,assessment and recommendation",
+      "response": "I see you've asked about ISBAR. I'll keep it brief for our VR simulation. ISBAR stands for Introduction, Situation, Background, Assessment, and Recommendation. It's a framework for clear communication in critical situations. Let's break it down:\n\n- Introduction: Briefly introduce the topic or issue.\n- Situation: Describe the current situation and any relevant details.\n- Background: Provide some context and history of the issue.\n- Assessment: Summarize your findings and assessment of the situation.\n- Recommendation: Clearly state your recommended course of action.\n\nISBAR helps ensure completeness, clarity, and professionalism in communication. It's portable, memorable, and easy to use, making it a valuable tool in high-pressure situations.\n\nNow, if you'd like to discuss a specific patient, please provide their ID.",
+      "retrieved_context": [
+        {
+          "doc_id": "D:\\farzana\\vr_rag\\data\\pdf\\ISBAR-toolkit.pdf",
+          "text": "4\n \nFrequently asked questions about ISBAR \nWhat is ISBAR? \nThe ISBAR framework represents a standardised approach to \ncommunication which can be used in any situation. It stands for \nIntroduction, Situation, Background, Assessment and \nRecommendation. \n \nWhat are the advantages of ISBAR? \nThe ISBAR framework  \n• Ensures completeness of information and reduces \nlikelihood of missed data \n Is an easy and focussed way to set expectations for what \nwill be communicated"
+        },
+        {
+          "doc_id": "D:\\farzana\\vr_rag\\data\\pdf\\ISBAR-toolkit.pdf",
+          "text": "The ISBAR framework  \n• Ensures completeness of information and reduces \nlikelihood of missed data \n Is an easy and focussed way to set expectations for what \nwill be communicated \n Ensures a recommendation is clear and professional \n Gives confidence in communication \n focuses not on the people who are communicating but on \nthe problem itself. \n \nWhy would I use ISBAR?   \nKey reasons for using ISBAR are  \n It is portable, memorable and easy to use"
+        },
+        {
+          "doc_id": "D:\\farzana\\vr_rag\\data\\pdf\\ISBAR-toolkit.pdf",
+          "text": " focuses not on the people who are communicating but on \nthe problem itself. \n \nWhy would I use ISBAR?   \nKey reasons for using ISBAR are  \n It is portable, memorable and easy to use \n Can be used to present information clearly in any situation \n Helps you to organise what you’re going to say \n Standardises communication between everyone  \n 5 \nWhere did ISBAR come from?  \n \nSBAR originated in the US Navy for use in nuclear submarines. It"
+        }
+      ]
+    },
+    {
+      "query_id": "001",
+      "query": "What is the ISBAR handoff for patient D002?",
+      "gt_answer": "Patient D002 is Olivia Schneider, an 85-year-old female in Endocrinology under Dr. Schneider. Situation: admitted with fever and cough. Background: history of hypertension. Assessment: signs of infection. Recommendation: order further tests.",
+      "response": "Introduction: Olivia Schneider, 85-year-old Female, admitted to Endocrinology under Dr. Schneider.\n\nSituation: Admitted with fever and cough.\n\nBackground: History of hypertension.\n\nAssessment: Signs of infection.\n\nRecommendation: Order further tests.\n\nTo perform an effective ISBAR handoff for patient D002, we use the following structure:\n\n- I: Introduction - Introduce the patient and your role.\n- S: Situation - Describe the current situation and any changes since the last handoff.\n- B: Background - Provide relevant background information, such as medical history or allergies.\n- A: Assessment - Share your assessment and any test results.\n- R: Recommendation - Outline your plan for the patient's care.\n\nIn this case, as the attending doctor, to effectively hand over patient D002 to you, Dr. Schneider would say:\n\n\"Introduction: Olivia Schneider, 85-year-old Female, admitted to Endocrinology.\n\nSituation: She was admitted with fever and cough, and I've ordered some tests.\n\nBackground: She has a history of hypertension.\n\nAssessment: The signs of infection are concerning, and I've ordered further tests.\n\nRecommendation: I recommend we continue to monitor her condition closely and await the test results.\"",
+      "retrieved_context": [
+        {
+          "doc_id": "D002",
+          "text": "Patient ID: D002\nName: olivia schneider\nAge: 85\nGender: Female\nWard: Endocrinology\nAttending Doctor: Dr. Schneider\n\nISBAR Report for Olivia Schneider:\nIntroduction: Olivia Schneider, 85-year-old Female, admitted to Endocrinology under Dr. Schneider.\nSituation: Admitted with fever and cough.\nBackground: History of hypertension.\nAssessment: Signs of infection.\nRecommendation: Order further tests."
+        }
+      ]
+    }
+  ]
+}

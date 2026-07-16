@@ -1,0 +1,167 @@
+using UnityEngine;
+using TMPro;
+using System;
+
+public class InfoCanvasDisplay : MonoBehaviour
+{
+    public RagClient ragClient;
+    public TextMeshProUGUI titleText;
+    public TextMeshProUGUI answerText;
+    public TextMeshProUGUI statusText;
+    public TMP_InputField inputField;
+    public TextMeshProUGUI introductionText;
+    public TextMeshProUGUI situationText;
+    public TextMeshProUGUI backgroundText;
+    public TextMeshProUGUI assessmentText;
+    public TextMeshProUGUI recommendationText;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI suggestedText;
+    public int score;
+
+    [Serializable]
+    public class ISBARFeedbackResponse
+    {
+        public string patientId;
+        public FeedbackSections feedback;
+        public string improvedISBAR;
+    }
+
+    [Serializable]
+    public class FeedbackSections
+    {
+        public FeedbackItem introduction;
+        public FeedbackItem situation;
+        public FeedbackItem background;
+        public FeedbackItem assessment;
+        public FeedbackItem recommendation;
+    }
+
+    [Serializable]
+    public class FeedbackItem
+    {
+        public string status;
+        public string comment;
+    }
+    private void Awake()
+    {
+        Debug.Log("[InfoCanvas] Awake() called");
+
+        if (ragClient == null)
+        {
+            ragClient = UnityEngine.Object.FindAnyObjectByType<RagClient>();
+            Debug.Log("[InfoCanvas] RagClient found: " + (ragClient != null));
+        }
+
+        if (ragClient == null)
+            Debug.LogError("[InfoCanvas] RagClient NOT found!");
+        else
+            Debug.Log("[InfoCanvas] RagClient assigned OK");
+    }
+    private void OnEnable()
+    {
+        if (ragClient != null)
+        {
+            ragClient.OnRequestStarted += ShowThinking;
+            ragClient.OnAnswerReceived += ShowAnswer;
+        }
+        else
+        {
+            Debug.LogError("RagClient not assigned!");
+        }
+    }
+    private void OnDisable()
+    {
+        if (ragClient != null)
+        {
+            ragClient.OnRequestStarted -= ShowThinking;
+            ragClient.OnAnswerReceived -= ShowAnswer;
+        }
+    }
+
+    public void ShowThinking()
+    {
+        if (statusText != null)
+            statusText.text = "Thinking...";
+
+        if (answerText != null)
+            answerText.text = ""; ;
+    }
+
+    public void ShowAnswer(string text)
+    {
+        if (statusText != null)
+            statusText.text = "Response Received";
+        if (titleText != null)
+            titleText.text = " ";
+        try
+        {
+            ISBARFeedbackResponse data =
+                JsonUtility.FromJson<ISBARFeedbackResponse>(text);
+
+            if (data != null && data.feedback != null)
+            {
+                SetFeedback(introductionText, "Introduction", data.feedback.introduction);
+                SetFeedback(situationText, "Situation", data.feedback.situation);
+                SetFeedback(backgroundText, "Background", data.feedback.background);
+                SetFeedback(assessmentText, "Assessment", data.feedback.assessment);
+                SetFeedback(recommendationText, "Recommendation", data.feedback.recommendation);
+
+                if (suggestedText != null)
+                    suggestedText.text = "Suggested ISBAR:\n" + data.improvedISBAR;
+
+                if (answerText != null)
+                    answerText.text = "";
+
+                return;
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("Could not parse ISBAR JSON: " + e.Message);
+        }
+
+        // fallback if RAG returns normal text
+        if (answerText != null)
+            answerText.text = FormatText(text);
+    }
+    void SetFeedback(TextMeshProUGUI target, string label, FeedbackItem item)
+    {
+        if (target == null || item == null)
+            return;
+
+        target.text = label + ": " + item.comment;
+
+        switch (item.status.ToLower())
+        {
+            case "good":
+                target.color = Color.green;
+                break;
+
+            case "partial":
+            case "weak":
+                target.color = Color.yellow;
+                break;
+
+            case "missing":
+                target.color = Color.red;
+                break;
+
+            default:
+                target.color = Color.white;
+                break;
+        }
+    }
+    string FormatText(string text)
+    {
+        text = text.Trim();
+        text = text.Replace("\\n", "\n");
+
+        // Remove markdown symbols
+        text = text.Replace("**", "");
+        text = text.Replace("##", "");
+        text = text.Replace("*", "");
+        text = text.Replace("__", "");
+
+        return text;
+    }
+}

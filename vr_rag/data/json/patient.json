@@ -1,0 +1,1604 @@
+{
+  "patients": [
+    {
+      "id": "D001",
+      "ISBAR": {
+        "introduction": {
+          "name": "Emma Wilson",
+          "age": 65,
+          "gender": "Female",
+          "ward": "Neurology",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Chronic smoker.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D002",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 85,
+          "gender": "Female",
+          "ward": "Endocrinology",
+          "doctor": "Dr. Schneider"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "History of hypertension.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D003",
+      "ISBAR": {
+        "introduction": {
+          "name": "Mia Braun",
+          "age": 81,
+          "gender": "Female",
+          "ward": "Endocrinology",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Previous surgery.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D004",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ethan Fischer",
+          "age": 41,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "Chronic smoker.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D005",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophia Becker",
+          "age": 27,
+          "gender": "Female",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Patel"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "History of hypertension.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D006",
+      "ISBAR": {
+        "introduction": {
+          "name": "Weber John",
+          "age": 30,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "No significant medical history.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D007",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lucas Weber",
+          "age": 27,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Previous surgery.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D008",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lisa Wong",
+          "age": 78,
+          "gender": "Female",
+          "ward": "Cardiology",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "History of hypertension.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D009",
+      "ISBAR": {
+        "introduction": {
+          "name": "Isabella Fischer",
+          "age": 31,
+          "gender": "Female",
+          "ward": "Neurology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "History of hypertension.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D010",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 30,
+          "gender": "Female",
+          "ward": "General Medicine",
+          "doctor": "Dr. Braun"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "History of hypertension.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D011",
+      "ISBAR": {
+        "introduction": {
+          "name": "Michael Brown",
+          "age": 81,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Schneider"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "No significant medical history.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D012",
+      "ISBAR": {
+        "introduction": {
+          "name": "Mary Johnson",
+          "age": 65,
+          "gender": "Female",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "History of hypertension.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D013",
+      "ISBAR": {
+        "introduction": {
+          "name": "Fatima Ali",
+          "age": 32,
+          "gender": "Female",
+          "ward": "Oncology",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "History of hypertension.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D014",
+      "ISBAR": {
+        "introduction": {
+          "name": "Fatima Ali",
+          "age": 32,
+          "gender": "Female",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "Previous surgery.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D015",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 42,
+          "gender": "Female",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Type 2 diabetes.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D016",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophie Laurent",
+          "age": 26,
+          "gender": "Female",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "Type 2 diabetes.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D017",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ahmed Khan",
+          "age": 84,
+          "gender": "Male",
+          "ward": "Neurology",
+          "doctor": "Dr. M\u00fcller"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "No significant medical history.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D018",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophie Laurent",
+          "age": 27,
+          "gender": "Female",
+          "ward": "Gynecology",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Type 2 diabetes.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D019",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ava Keller",
+          "age": 33,
+          "gender": "Female",
+          "ward": "Oncology",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Previous surgery.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D020",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophie Laurent",
+          "age": 29,
+          "gender": "Female",
+          "ward": "General Medicine",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Previous surgery.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D021",
+      "ISBAR": {
+        "introduction": {
+          "name": "Daniel Hoffmann",
+          "age": 58,
+          "gender": "Male",
+          "ward": "Respiratory",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Chronic smoker.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D022",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lisa Wong",
+          "age": 42,
+          "gender": "Female",
+          "ward": "Endocrinology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Chronic smoker.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D023",
+      "ISBAR": {
+        "introduction": {
+          "name": "Mia Braun",
+          "age": 49,
+          "gender": "Female",
+          "ward": "Cardiology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Chronic smoker.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D024",
+      "ISBAR": {
+        "introduction": {
+          "name": "Mary Johnson",
+          "age": 38,
+          "gender": "Female",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "Previous surgery.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D025",
+      "ISBAR": {
+        "introduction": {
+          "name": "Isabella Fischer",
+          "age": 77,
+          "gender": "Female",
+          "ward": "Endocrinology",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Previous surgery.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D026",
+      "ISBAR": {
+        "introduction": {
+          "name": "David Wilson",
+          "age": 33,
+          "gender": "Male",
+          "ward": "Respiratory",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Chronic smoker.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D027",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ethan Fischer",
+          "age": 80,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Schneider"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "History of hypertension.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D028",
+      "ISBAR": {
+        "introduction": {
+          "name": "John Doe",
+          "age": 24,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. M\u00fcller"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "History of hypertension.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D029",
+      "ISBAR": {
+        "introduction": {
+          "name": "David Wilson",
+          "age": 45,
+          "gender": "Male",
+          "ward": "Neurology",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "History of hypertension.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D030",
+      "ISBAR": {
+        "introduction": {
+          "name": "Michael Brown",
+          "age": 37,
+          "gender": "Male",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Braun"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D031",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophie Laurent",
+          "age": 65,
+          "gender": "Female",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Schneider"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Previous surgery.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D032",
+      "ISBAR": {
+        "introduction": {
+          "name": "Michael Brown",
+          "age": 35,
+          "gender": "Male",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Braun"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Chronic smoker.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D033",
+      "ISBAR": {
+        "introduction": {
+          "name": "Michael Brown",
+          "age": 34,
+          "gender": "Male",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "History of hypertension.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D034",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 39,
+          "gender": "Female",
+          "ward": "Gynecology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Previous surgery.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D035",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lucas Weber",
+          "age": 84,
+          "gender": "Male",
+          "ward": "Dermatology",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Chronic smoker.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D036",
+      "ISBAR": {
+        "introduction": {
+          "name": "Liam Smith",
+          "age": 24,
+          "gender": "Male",
+          "ward": "Endocrinology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Type 2 diabetes.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D037",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 76,
+          "gender": "Female",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Previous surgery.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D038",
+      "ISBAR": {
+        "introduction": {
+          "name": "John Doe",
+          "age": 70,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Patel"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Previous surgery.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D039",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophia Becker",
+          "age": 82,
+          "gender": "Female",
+          "ward": "Respiratory",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Type 2 diabetes.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D040",
+      "ISBAR": {
+        "introduction": {
+          "name": "Liam Smith",
+          "age": 48,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "History of hypertension.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D041",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 55,
+          "gender": "Female",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "History of hypertension.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D042",
+      "ISBAR": {
+        "introduction": {
+          "name": "John Doe",
+          "age": 63,
+          "gender": "Male",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "History of hypertension.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D043",
+      "ISBAR": {
+        "introduction": {
+          "name": "David Wilson",
+          "age": 60,
+          "gender": "Male",
+          "ward": "Cardiology",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "No significant medical history.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D044",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ava Keller",
+          "age": 72,
+          "gender": "Female",
+          "ward": "Cardiology",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Chronic smoker.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D045",
+      "ISBAR": {
+        "introduction": {
+          "name": "Liam Smith",
+          "age": 54,
+          "gender": "Male",
+          "ward": "Gynecology",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Previous surgery.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D046",
+      "ISBAR": {
+        "introduction": {
+          "name": "Michael Brown",
+          "age": 64,
+          "gender": "Male",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D047",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ava Keller",
+          "age": 53,
+          "gender": "Female",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Braun"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Chronic smoker.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D048",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ethan Fischer",
+          "age": 83,
+          "gender": "Male",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. M\u00fcller"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "History of hypertension.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D049",
+      "ISBAR": {
+        "introduction": {
+          "name": "Isabella Fischer",
+          "age": 68,
+          "gender": "Female",
+          "ward": "Cardiology",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Previous surgery.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D050",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophie Laurent",
+          "age": 54,
+          "gender": "Female",
+          "ward": "Endocrinology",
+          "doctor": "Dr. Braun"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Chronic smoker.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D051",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ethan Fischer",
+          "age": 20,
+          "gender": "Male",
+          "ward": "Endocrinology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "History of hypertension.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D052",
+      "ISBAR": {
+        "introduction": {
+          "name": "John Doe",
+          "age": 46,
+          "gender": "Male",
+          "ward": "Neurology",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Previous surgery.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D053",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ahmed Khan",
+          "age": 43,
+          "gender": "Male",
+          "ward": "Dermatology",
+          "doctor": "Dr. Patel"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "No significant medical history.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D054",
+      "ISBAR": {
+        "introduction": {
+          "name": "Noah M\u00fcller",
+          "age": 74,
+          "gender": "Male",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "No significant medical history.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D055",
+      "ISBAR": {
+        "introduction": {
+          "name": "Daniel Hoffmann",
+          "age": 27,
+          "gender": "Male",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "History of hypertension.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D056",
+      "ISBAR": {
+        "introduction": {
+          "name": "Fatima Ali",
+          "age": 69,
+          "gender": "Female",
+          "ward": "Dermatology",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "History of hypertension.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D057",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 46,
+          "gender": "Female",
+          "ward": "Dermatology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D058",
+      "ISBAR": {
+        "introduction": {
+          "name": "Liam Smith",
+          "age": 78,
+          "gender": "Male",
+          "ward": "Neurology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Chronic smoker.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D059",
+      "ISBAR": {
+        "introduction": {
+          "name": "Liam Smith",
+          "age": 48,
+          "gender": "Male",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "History of hypertension.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D060",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lisa Wong",
+          "age": 56,
+          "gender": "Female",
+          "ward": "Cardiology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "No significant medical history.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D061",
+      "ISBAR": {
+        "introduction": {
+          "name": "Michael Brown",
+          "age": 56,
+          "gender": "Male",
+          "ward": "Dermatology",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "No significant medical history.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D062",
+      "ISBAR": {
+        "introduction": {
+          "name": "Carlos Ramirez",
+          "age": 27,
+          "gender": "Male",
+          "ward": "Oncology",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "No significant medical history.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D063",
+      "ISBAR": {
+        "introduction": {
+          "name": "John Doe",
+          "age": 37,
+          "gender": "Male",
+          "ward": "Endocrinology",
+          "doctor": "Dr. M\u00fcller"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Previous surgery.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D064",
+      "ISBAR": {
+        "introduction": {
+          "name": "Emma Wilson",
+          "age": 26,
+          "gender": "Female",
+          "ward": "Cardiology",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D065",
+      "ISBAR": {
+        "introduction": {
+          "name": "Carlos Ramirez",
+          "age": 22,
+          "gender": "Male",
+          "ward": "Cardiology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "No significant medical history.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D066",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophie Laurent",
+          "age": 58,
+          "gender": "Female",
+          "ward": "Gynecology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Previous surgery.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D067",
+      "ISBAR": {
+        "introduction": {
+          "name": "Noah M\u00fcller",
+          "age": 62,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D068",
+      "ISBAR": {
+        "introduction": {
+          "name": "Mary Johnson",
+          "age": 78,
+          "gender": "Female",
+          "ward": "General Medicine",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D069",
+      "ISBAR": {
+        "introduction": {
+          "name": "Mia Braun",
+          "age": 27,
+          "gender": "Female",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Smith"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D070",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lisa Wong",
+          "age": 78,
+          "gender": "Female",
+          "ward": "Cardiology",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Previous surgery.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D071",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ahmed Khan",
+          "age": 46,
+          "gender": "Male",
+          "ward": "Oncology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "No significant medical history.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D072",
+      "ISBAR": {
+        "introduction": {
+          "name": "Isabella Fischer",
+          "age": 77,
+          "gender": "Female",
+          "ward": "Endocrinology",
+          "doctor": "Dr. M\u00fcller"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Previous surgery.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D073",
+      "ISBAR": {
+        "introduction": {
+          "name": "Mia Braun",
+          "age": 55,
+          "gender": "Female",
+          "ward": "Oncology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "Chronic smoker.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D074",
+      "ISBAR": {
+        "introduction": {
+          "name": "John Doe",
+          "age": 22,
+          "gender": "Male",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Previous surgery.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D075",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 45,
+          "gender": "Female",
+          "ward": "General Medicine",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D076",
+      "ISBAR": {
+        "introduction": {
+          "name": "John Doe",
+          "age": 73,
+          "gender": "Male",
+          "ward": "Cardiology",
+          "doctor": "Dr. M\u00fcller"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "No significant medical history.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D077",
+      "ISBAR": {
+        "introduction": {
+          "name": "Daniel Hoffmann",
+          "age": 41,
+          "gender": "Male",
+          "ward": "Dermatology",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Type 2 diabetes.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D078",
+      "ISBAR": {
+        "introduction": {
+          "name": "Daniel Hoffmann",
+          "age": 64,
+          "gender": "Male",
+          "ward": "Neurology",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "History of hypertension.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D079",
+      "ISBAR": {
+        "introduction": {
+          "name": "Isabella Fischer",
+          "age": 68,
+          "gender": "Female",
+          "ward": "Neurology",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "No significant medical history.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D080",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lucas Weber",
+          "age": 70,
+          "gender": "Male",
+          "ward": "Oncology",
+          "doctor": "Dr. Weber"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Type 2 diabetes.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D081",
+      "ISBAR": {
+        "introduction": {
+          "name": "Noah M\u00fcller",
+          "age": 77,
+          "gender": "Male",
+          "ward": "Endocrinology",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Previous surgery.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D082",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophia Becker",
+          "age": 55,
+          "gender": "Female",
+          "ward": "Neurology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "No significant medical history.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D083",
+      "ISBAR": {
+        "introduction": {
+          "name": "Emma Wilson",
+          "age": 43,
+          "gender": "Female",
+          "ward": "Respiratory",
+          "doctor": "Dr. Becker"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "No significant medical history.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D084",
+      "ISBAR": {
+        "introduction": {
+          "name": "Mary Johnson",
+          "age": 83,
+          "gender": "Female",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Braun"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "No significant medical history.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D085",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lisa Wong",
+          "age": 69,
+          "gender": "Female",
+          "ward": "Gynecology",
+          "doctor": "Dr. Patel"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Previous surgery.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D086",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophia Becker",
+          "age": 28,
+          "gender": "Female",
+          "ward": "Neurology",
+          "doctor": "Dr. M\u00fcller"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "No significant medical history.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D087",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 65,
+          "gender": "Female",
+          "ward": "Respiratory",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "No significant medical history.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D088",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophia Becker",
+          "age": 45,
+          "gender": "Female",
+          "ward": "General Medicine",
+          "doctor": "Dr. Patel"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "Previous surgery.",
+        "assessment": "Mild dehydration.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D089",
+      "ISBAR": {
+        "introduction": {
+          "name": "Noah M\u00fcller",
+          "age": 78,
+          "gender": "Male",
+          "ward": "Respiratory",
+          "doctor": "Dr. Patel"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "History of hypertension.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D090",
+      "ISBAR": {
+        "introduction": {
+          "name": "Carlos Ramirez",
+          "age": 56,
+          "gender": "Male",
+          "ward": "Cardiology",
+          "doctor": "Dr. Schneider"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "History of hypertension.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D091",
+      "ISBAR": {
+        "introduction": {
+          "name": "Ahmed Khan",
+          "age": 49,
+          "gender": "Male",
+          "ward": "Neurology",
+          "doctor": "Dr. M\u00fcller"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "Type 2 diabetes.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D092",
+      "ISBAR": {
+        "introduction": {
+          "name": "Fatima Ali",
+          "age": 78,
+          "gender": "Female",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Chronic smoker.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D093",
+      "ISBAR": {
+        "introduction": {
+          "name": "John Doe",
+          "age": 24,
+          "gender": "Male",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Previous surgery.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D094",
+      "ISBAR": {
+        "introduction": {
+          "name": "Lucas Weber",
+          "age": 82,
+          "gender": "Male",
+          "ward": "Neurology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Chronic smoker.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Schedule specialist review."
+      }
+    },
+    {
+      "id": "D095",
+      "ISBAR": {
+        "introduction": {
+          "name": "Sophie Laurent",
+          "age": 48,
+          "gender": "Female",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Patel"
+        },
+        "situation": "Admitted with chest pain and shortness of breath.",
+        "background": "Type 2 diabetes.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D096",
+      "ISBAR": {
+        "introduction": {
+          "name": "David Wilson",
+          "age": 79,
+          "gender": "Male",
+          "ward": "Respiratory",
+          "doctor": "Dr. Fischer"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "History of hypertension.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Start medication."
+      }
+    },
+    {
+      "id": "D097",
+      "ISBAR": {
+        "introduction": {
+          "name": "Daniel Hoffmann",
+          "age": 45,
+          "gender": "Male",
+          "ward": "Orthopedics",
+          "doctor": "Dr. Schneider"
+        },
+        "situation": "Admitted with fever and cough.",
+        "background": "Chronic smoker.",
+        "assessment": "Stable vitals.",
+        "recommendation": "Order further tests."
+      }
+    },
+    {
+      "id": "D098",
+      "ISBAR": {
+        "introduction": {
+          "name": "David Wilson",
+          "age": 44,
+          "gender": "Male",
+          "ward": "General Medicine",
+          "doctor": "Dr. Hoffmann"
+        },
+        "situation": "Reported dizziness and fainting episode.",
+        "background": "No significant medical history.",
+        "assessment": "Signs of infection.",
+        "recommendation": "Provide supportive care."
+      }
+    },
+    {
+      "id": "D099",
+      "ISBAR": {
+        "introduction": {
+          "name": "Olivia Schneider",
+          "age": 37,
+          "gender": "Female",
+          "ward": "Gastroenterology",
+          "doctor": "Dr. Keller"
+        },
+        "situation": "Complains of abdominal pain and nausea.",
+        "background": "History of hypertension.",
+        "assessment": "ECG abnormalities detected.",
+        "recommendation": "Continue monitoring."
+      }
+    },
+    {
+      "id": "D100",
+      "ISBAR": {
+        "introduction": {
+          "name": "Daniel Hoffmann",
+          "age": 39,
+          "gender": "Male",
+          "ward": "Gynecology",
+          "doctor": "Dr. Braun"
+        },
+        "situation": "Presented with sudden weakness on one side.",
+        "background": "Chronic smoker.",
+        "assessment": "Elevated blood sugar.",
+        "recommendation": "Start medication."
+      }
+    }
+  ]
+}

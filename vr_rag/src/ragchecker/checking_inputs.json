@@ -1,0 +1,14 @@
+{
+   "results": [
+      {
+         "query_id": "000",
+         "query": "what is isbar",
+         "gt_answer": "it stands for introduction,situation ,background ,assessment and recommendation"
+      },
+      {
+         "query_id": "001",
+         "query": "What is the ISBAR handoff for patient D002?",
+         "gt_answer": "Patient D002 is Olivia Schneider, an 85-year-old female in Endocrinology under Dr. Schneider. Situation: admitted with fever and cough. Background: history of hypertension. Assessment: signs of infection. Recommendation: order further tests."
+      }
+   ]
+}

@@ -1,0 +1,145 @@
+### RAG With more features
+
+from langchain_groq import ChatGroq ### provides a Language Processing Unit (LPU) inference engine that offers incredibly high-speed inference for large language models
+import os
+from dotenv import load_dotenv ##  file is specifically used to store all the variables like API keys 
+from .vector_store import VectorStore
+from src.prompt_builder import agent_classifier
+
+
+load_dotenv()
+class RagSearch:
+    def __init__(
+        self,
+        persist_dir: str = "faiss_store",
+        embedding_model: str = "all-MiniLM-L6-v2",
+        llm_model: str = "llama-3.1-8b-instant"
+    ):
+        self.vector_store = VectorStore(
+            persist_directory=persist_dir,
+            embedding_model=embedding_model
+        )
+        self.retriever = None  
+        faiss_path = os.path.join(persist_dir, "faiss.index")
+        meta_path = os.path.join(persist_dir, "metadata.pkl")
+
+        if os.path.exists(faiss_path) and os.path.exists(meta_path):
+            print("[INFO] Loading existing FAISS store...")
+            self.vector_store.load()
+        else:
+            print("[INFO] Building FAISS store...")
+            from data_loader import load_all_documents
+            docs = load_all_documents("data")
+            self.vector_store.build_from_documents(docs)
+
+        groq_api_key = os.getenv("GROQ_API_KEY", "")
+        self.llm = ChatGroq(
+            groq_api_key=groq_api_key,
+            model_name=llm_model
+        )
+        print(f"[INFO] Groq LLM initialized: {llm_model}")
+    def _extract_text(self, result):
+        metadata = result.get("metadata", {}) or {}
+
+        return (
+            result.get("text")
+            or result.get("chunk")
+            or metadata.get("text")
+            or ""
+        ).strip()
+
+    def search_and_summarize(
+        self,
+        query: str,
+        top_k: int = 5,
+        patient_id: str = None,
+        session_id: str = None,
+        mode: str = "general",
+        history_text: str = "",
+        scene_role: str = "general_assistant",
+        scene_mode: str = "default"
+    ) -> str:
+        texts = []
+        # Use HybridRetriever if available, else fallback to vector store
+        if self.retriever is not None:
+            print(f"[RagSearch] Using HybridRetriever mode={mode} patient_id={patient_id}")
+            results = self.retriever.retrieve(
+                query=query,
+                top_k=top_k,
+                patient_id=patient_id,
+                mode=mode
+            )
+        else:
+            print("[RagSearch] Using direct vector store query")
+            results = self.vector_store.query(query, top_k=top_k)
+            # Extract text from retriever results
+            
+            for r in results:
+                text = r.get("chunk", "").strip()  # "chunk"
+                if text:
+                    texts.append(text)
+                    print(f"[RagSearch] Retrieved chunk: {text[:100]}")
+
+                else:
+                   print(f"[RagSearch] Using direct vector store query")
+            results = self.vector_store.query(query, top_k=top_k)
+            # Extract text from vector store results
+         
+            for r in results:
+                 text = self._extract_text(r)
+                 if text:
+                    texts.append(text)
+                    print(f"[RagSearch] Retrieved text: {text[:100]}")
+                 else:
+                     print(f"[RagSearch] Empty result structure: {r}")
+
+        print(f"[RagSearch] Total texts retrieved: {len(texts)}")
+
+        if not texts:
+            return "I could not find relevant information. Please try rephrasing your question."
+
+        context = "\n\n".join(texts)
+        system_role = agent_classifier(scene_role, scene_mode)
+
+        prompt = f"""
+{system_role}
+
+Recent conversation:
+{history_text}
+
+User query:
+{query}
+
+You are assisting in a medical Virtual Reality simulation.
+
+Rules:
+- Answer only using the provided context
+- Be concise, polite and structured
+- If answering about ISBAR, explain concisely
+- If answering about a patient, respond clinically
+- If a follow-up question is asked, use the recent conversation
+- If patient is not found, clearly say so
+- Never substitute one patient for another
+- Do not share information about other patients unless asked
+- Do not fabricate any information
+
+Recent conversation:
+{history_text}
+
+User query:
+{query}
+
+Context:
+{context}
+
+Answer:
+"""
+
+        response = self.llm.invoke(prompt)
+        return response.content
+
+if __name__ == "__main__":
+    rag_search = RagSearch()
+    query = "What is condition of patient john?"
+    summary = rag_search.search_and_summarize(query, top_k=3)
+    print("Summary:", summary)

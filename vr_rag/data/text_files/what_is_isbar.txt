@@ -1,0 +1,11 @@
+ISBAR - Identify, Situation, Background, Assessment and Recommendation
+ISBAR (Identify, Situation, Background, Assessment and Recommendation) is a mnemonic created to improve safety in the transfer of critical information.
+ 
+It originates from SBAR, the most frequently used mnemonic in health and other high risk environments such as the military.
+The “I” in ISBAR is to ensure  that accurate identification of those participating in handover and of the patient is established.
+
+We are using ISBAR as a tool to aid the safe transfer of patient information in clinical handover. It is generic aid and should be adapted 
+to fit the clinical context. Adapting ISBAR for the clinical context is an opportunity for the health care team and patients to decide what essential
+information should always be handed over (e.g. estimated blood loss in the handover of a surgical patient). 
+
+

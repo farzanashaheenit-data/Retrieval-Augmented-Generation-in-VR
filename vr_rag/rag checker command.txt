@@ -1,0 +1,5 @@
+first run
+python -m src.ragchecker.rag_checker --metrics overall_metrics
+ 2nd run this
+$env:RAGCHECKER_LITELLM_DEBUG="1"
+python -m src.ragchecker.rag_checker --metrics overall_metrics

@@ -1,0 +1,58 @@
+### RAG Pipeline  
+Data Ingestion to Vector DB Pipeline
+import os
+import langchain
+from langchain_community.document_loaders import PyPDFLoader,PyPDFium2Loader,PyMuPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from pathlib import Path
+#read all the pdf inside all the directory
+
+def process_all_pdf(pdf_directory):
+    """process all the pdfs"""
+    all_documents=[]
+    pdf_dir=Path(pdf_directory)
+
+    #find all the files in loop
+    pdf_files=list(pdf_dir.glob("**/*.pdf"))
+    print(f"Found {len(pdf_files)} PDF files process")
+    
+    for pdf in pdf_files:
+        print (f"processing of : {pdf.name}")
+        try:
+            loader=PyPDFLoader(str(pdf))
+            documents=loader.load()
+            #add metdata 
+            for doc in documents:
+                doc.metadata['source_file']=pdf.name
+                doc.metadata['file_type']='pdf'
+
+            all_documents.extend(documents)
+            print (f" loaded {len(documents)} pages")
+        except Exception as e:
+            print (f"Error:{e}")
+        print(f"\nTotal documents loaded : {len(all_documents)}")
+    return all_documents
+
+
+all_pdfs=process_all_pdf("../data/pdf")
+
+all_pdfs
+###chunking of documents using text splitting 
+
+def split_documents(documents ,chunk_size=1000,chunk_overlap=200):
+    """ split documents into smaller chunks for better RAG Performance"""
+    text_splitter=RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+        length_function=len,
+        separators=["\n\n","\n"," ",""])
+    split_documents=text_splitter.split_documents(documents)
+    print(f"split{len(documents)} documents into {len(split_documents)} chunks")
+    #show a chunking eg
+    if split_documents:
+        print(f"\n Example Chunks")
+        print(f"Content :{split_documents[0].page_content[:200]}....")
+        print(f"Metadata :{split_documents[0].metadata}....")
+    return split_documents
+chunks=split_documents(all_pdfs)
+chunks
