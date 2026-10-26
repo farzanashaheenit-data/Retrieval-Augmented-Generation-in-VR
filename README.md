@@ -74,20 +74,20 @@ Dr. Raggy is a proof-of-concept that explores whether an AI-driven simulator can
 ## Tech Stack
 
 **Backend (Python)**
-- **FastAPI** — HTTP API
-- **faster-whisper** — Speech recognition
-- **FAISS** — Vector similarity search over patient records
-- **sentence-transformers** — Text embedding
-- **Groq (LLaMA)** — LLM humanization layer
-- **Piper** — Neural text-to-speech (runs locally, low-latency)
-- **ReportLab** — PDF report generation
+- **FastAPI** : HTTP API
+- **faster-whisper** : Speech recognition
+- **FAISS** : Vector similarity search over patient records
+- **sentence-transformers** : Text embedding
+- **Groq (LLaMA)** : LLM humanization layer
+- **Piper** : Neural text-to-speech (runs locally, low-latency)
+- **ReportLab** : PDF report generation
 
 **Unity Client (C#)**
 - **Unity 6.3 LTS** with URP
-- **uLipSync** — Real-time viseme-based lip synchronization
-- **Reallusion CC4 Character** — Avatar rig
-- **Mixamo** — Body animations (idle, talking)
-- **TextMeshPro** — UI text rendering
+- **uLipSync** : Real-time viseme-based lip synchronization
+- **Reallusion CC4 Character** : Avatar rig
+- **Mixamo** : Body animations (idle, talking)
+- **TextMeshPro** : UI text rendering
 
 ## Repository Structure
 
