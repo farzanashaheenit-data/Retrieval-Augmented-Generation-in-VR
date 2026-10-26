@@ -1,4 +1,4 @@
-# Dr. Raggy — Voice-Driven Clinical Handover Training Simulator
+# Dr. Raggy Voice-Driven Clinical Handover Training Simulator
 
 A Unity-based clinical training simulator that lets users practice receiving ISBAR patient handovers from an AI-driven virtual doctor, then tests their recall through an interactive quiz.
 
